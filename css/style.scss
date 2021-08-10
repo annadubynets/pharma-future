@@ -1,0 +1,252 @@
+@import "./bootstrap.min.css";
+@import "./bootstrap-select.min.css";
+@import "fonts.css";
+@import "variables";
+body {
+    font-family: 'Jost';
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    padding: 42px 0;
+    background-color: $white!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Circe';
+    font-size: 18px;
+    color: $black;
+    padding: 0 12px;
+}
+
+.btn {
+    font-family: 'Circe';
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 15px 48px;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $blue;
+    &:hover {
+        box-shadow: 0px 15px 35px rgba(0, 95, 255, 0.25);
+    }
+    &:focus {
+        box-shadow: inset 0px 15px 35px rgba(0, 95, 255, 0.35);
+    }
+}
+
+.btn-white {
+    color: $black;
+    background-color: $white;
+}
+
+@media (min-width: 992px) {
+    .mw-lg-130 {
+        max-width: 130%!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .mw-md-150 {
+        max-width: 150%!important;
+    }
+}
+
+.hero {
+    .hero-image {
+        position: absolute;
+        right: 0;
+        width: 51%;
+    }
+}
+
+.card {
+    background-color: transparent;
+    .card-img-top {
+        min-height: 211px;
+    }
+    .main-description {
+        font-family: 'Jost';
+        font-weight: 300;
+        font-size: 24px;
+        color: $darkgrey;
+    }
+    .card-title {
+        font-weight: 600;
+        font-size: 18px;
+        color: $darkgrey;
+    }
+    .card-text {
+        font-family: 'Montserrat';
+        font-weight: normal;
+        font-size: 16px;
+        color: $darkgrey;
+    }
+}
+
+.form-bg {
+    background: url('../images/form-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+    font-family: 'Circe';
+    font-size: 14px;
+    color: $blue;
+    border: 1px solid $blue;
+    border-radius: 4px;
+    padding: 13px 16px;
+    &::placeholder {
+        color: rgba(0, 91, 243, 0.5);
+    }
+    &:focus {
+        box-shadow: none;
+        border-color: $blue;
+    }
+}
+
+.input-group-text {
+    background-color: $blue;
+    border: none;
+    padding: 10px 48px;
+}
+
+.bootstrap-select> {
+    .btn {
+        font-weight: 300;
+        font-size: 20px;
+        padding: 11px 20px!important;
+    }
+    .btn-light {
+        background-color: $white;
+        border-color: $blue;
+        color: $blue;
+    }
+    .dropdown-menu {
+        border-color: $blue;
+    }
+    .dropdown-toggle {
+        &::after {
+            font-family: 'icomoon';
+            content: "\e902";
+            font-size: 16px;
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+}
+
+.dropdown-item {
+    font-weight: 400;
+    font-size: 14px;
+    color: $darkgrey;
+    border: 1px solid rgba(0, 82, 255, 0.08);
+    padding: 15px 24px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: $darkgrey;
+    background: #F4F8FF;
+}
+
+.success-blur {
+    width: 231px;
+    height: 231px;
+    background-color: $green;
+    border-radius: 50%;
+    filter: blur(200px);
+    position: absolute;
+    z-index: -1;
+    &.right {
+        top: -100px;
+        right: 0px;
+    }
+    &.left {
+        top: 0;
+        left: 0;
+    }
+}
+
+.gold-blur {
+    width: 231px;
+    height: 231px;
+    background-color: $gold;
+    border-radius: 50%;
+    filter: blur(200px);
+    position: absolute;
+    z-index: -1;
+    &.right {
+        bottom: 0;
+        right: 0;
+    }
+    &.left {
+        top: 0;
+        left: 0;
+    }
+}
+
+.blue-blur {
+    width: 231px;
+    height: 231px;
+    background-color: $blue;
+    border-radius: 50%;
+    filter: blur(200px);
+    position: absolute;
+    z-index: -1;
+    &.right {
+        top: -100px;
+        right: 0;
+    }
+    &.left {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+footer {
+    .form-control {
+        font-family: 'Circe';
+        font-size: 14px;
+        color: $black;
+        border: 1px solid $white;
+        border-radius: 4px;
+        padding: 13px 16px;
+        background-color: transparent;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        &:focus {
+            &::placeholder {
+                color: #BDBDBD;
+            }
+            color: $darkgrey;
+            background-color: $white;
+            border-color: $blue;
+        }
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li a {
+            font-weight: 400;
+            font-size: 18px;
+            color: $white;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+        }
+    }
+}

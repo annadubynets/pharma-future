@@ -1,0 +1,117 @@
+$black: #474747;
+$darkgrey: #3B3B3B;
+$lightskyblue: #AEC9FF;
+$gold: #FFCB2F;
+$cornflowerblue: #5D95F3;
+$blue: #005BF3;
+$red: #FF3434;
+$green: #53D86A;
+$white: #FFFFFF;
+h1 {
+    font-family: 'Circe';
+    font-weight: 700;
+    font-size: 64px;
+    color: $darkgrey;
+}
+
+h2 {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 32px;
+    color: $darkgrey;
+}
+
+h3 {
+    font-family: 'Jost';
+    font-weight: normal;
+    font-size: 24px;
+    color: $blue;
+}
+
+p {
+    font-family: 'Circe';
+    font-weight: normal;
+    font-size: 16px;
+    color: $darkgrey;
+    margin-bottom: 0;
+}
+
+.h-36 {
+    height: 36%;
+}
+
+.pt-190 {
+    padding-top: 190px!important;
+}
+
+.pt-160 {
+    padding-top: 160px;
+}
+
+.mb-9 {
+    margin-bottom: 96px;
+}
+
+.pb-160 {
+    padding-bottom: 160px;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-primary {
+    color: $blue!important;
+}
+
+.text-primary-opacity {
+    color: rgba(0, 91, 243, 0.5);
+}
+
+.font-size-12 {
+    font-size: 12px!important;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-64 {
+    font-size: 64px;
+}
+
+.bg-white {
+    background-color: #FCFDFF!important;
+}
+
+.bg-primary {
+    background-color: $blue!important;
+}
+
+.bg-dark {
+    background-color: $darkgrey!important;
+}
+
+.border-primary {
+    border: 1px solid $lightskyblue!important;
+}
+
+.shadow-sm {
+    box-shadow: 0px 35px 35px rgba(103, 123, 158, 0.05)!important;
+}
+
+.rounded-1 {
+    border-radius: 4px;
+}
