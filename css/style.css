@@ -170,17 +170,19 @@ a {
   width: 51%;
 }
 
-.card {
-  background-color: transparent;
-}
-.card .card-img-top {
+.card-img-top {
   min-height: 211px;
 }
-.card .main-description {
+
+.main-description {
   font-family: "Jost";
   font-weight: 300;
   font-size: 24px;
   color: #3B3B3B;
+}
+
+.card {
+  background-color: transparent;
 }
 .card .card-title {
   font-weight: 600;
@@ -208,7 +210,7 @@ textarea {
 .form-control {
   font-family: "Circe";
   font-size: 14px;
-  color: #005BF3;
+  color: #3B3B3B;
   border: 1px solid #005BF3;
   border-radius: 4px;
   padding: 13px 16px;
@@ -299,6 +301,10 @@ textarea {
   top: 0;
   left: 0;
 }
+.gold-blur.center {
+  top: 50%;
+  right: 50%;
+}
 
 .blue-blur {
   width: 231px;
@@ -341,6 +347,7 @@ footer .form-control:focus::placeholder {
 footer ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 footer ul li a {
   font-weight: 400;
@@ -348,6 +355,80 @@ footer ul li a {
   color: #FFFFFF;
   text-transform: uppercase;
   padding-bottom: 8px;
+}
+footer p {
+  font-size: 18px;
+}
+
+@media (max-width: 1400px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .form-bg {
+    background: none;
+  }
+
+  .pt-400 {
+    padding-top: 0px !important;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .pb-160 {
+    padding-bottom: 120px;
+  }
+
+  .pt-190 {
+    padding-top: 10px !important;
+  }
+
+  .pt-400 {
+    padding-top: 450px !important;
+  }
+
+  .hero .hero-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .card .card-title {
+    font-size: 14px;
+  }
+  .card .card-text {
+    font-size: 12px;
+  }
+
+  .card-img-top {
+    min-height: 63px;
+  }
+
+  .main-description {
+    font-size: 12px;
+  }
+
+  footer ul li a {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
