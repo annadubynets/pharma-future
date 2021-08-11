@@ -440,6 +440,11 @@ footer p {
   h1 {
     font-size: 40px !important;
   }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 48px;
+  }
 }
 @media (max-width: 992px) {
   .hero .hero-image {
@@ -483,11 +488,6 @@ footer p {
 
   .navbar-brand-img {
     width: 156px;
-  }
-
-  .btn {
-    font-size: 16px;
-    padding: 10px 48px;
   }
 
   .card .card-title {
