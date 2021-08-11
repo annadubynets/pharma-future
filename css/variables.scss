@@ -39,7 +39,7 @@ h5 {
 p {
     font-family: 'Circe';
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: $darkgrey;
     margin-bottom: 0;
 }
@@ -130,6 +130,10 @@ p {
 
 .bg-primary {
     background-color: $blue!important;
+}
+
+.bg-info {
+    background-color: $aliceblue!important;
 }
 
 .bg-dark {

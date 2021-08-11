@@ -33,7 +33,7 @@ h5 {
 p {
   font-family: "Circe";
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   color: #3B3B3B;
   margin-bottom: 0;
 }
@@ -124,6 +124,10 @@ p {
 
 .bg-primary {
   background-color: #005BF3 !important;
+}
+
+.bg-info {
+  background-color: #F4F8FF !important;
 }
 
 .bg-dark {
@@ -593,7 +597,7 @@ marquee p {
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h5 {
