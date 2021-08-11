@@ -323,14 +323,24 @@ textarea {
   background: #F4F8FF;
 }
 
-.success-blur {
+.main-blur {
   width: 231px;
   height: 231px;
-  background-color: #53D86A;
   border-radius: 50%;
   filter: blur(200px);
   position: absolute;
   z-index: -1;
+}
+@media (max-width: 768px) {
+  .main-blur {
+    width: 123px;
+    height: 123px;
+    filter: blur(120px);
+  }
+}
+
+.success-blur {
+  background-color: #53D86A;
 }
 .success-blur.right {
   top: -100px;
@@ -342,13 +352,7 @@ textarea {
 }
 
 .gold-blur {
-  width: 231px;
-  height: 231px;
   background-color: #FFCB2F;
-  border-radius: 50%;
-  filter: blur(200px);
-  position: absolute;
-  z-index: -1;
 }
 .gold-blur.right {
   bottom: 0;
@@ -362,15 +366,15 @@ textarea {
   top: 40%;
   right: 45%;
 }
+@media (max-width: 768px) {
+  .gold-blur.center {
+    top: 10%;
+    right: 75%;
+  }
+}
 
 .blue-blur {
-  width: 231px;
-  height: 231px;
   background-color: #005BF3;
-  border-radius: 50%;
-  filter: blur(200px);
-  position: absolute;
-  z-index: -1;
 }
 .blue-blur.right {
   top: -100px;
@@ -380,9 +384,19 @@ textarea {
   bottom: 0;
   left: 0;
 }
+@media (max-width: 768px) {
+  .blue-blur.left {
+    display: none;
+  }
+}
 .blue-blur.center {
   top: 30%;
   right: 20%;
+}
+@media (max-width: 768px) {
+  .blue-blur.center {
+    top: 0;
+  }
 }
 
 footer .form-control {
