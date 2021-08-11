@@ -447,17 +447,13 @@ footer p {
 }
 @media (max-width: 992px) {
   .hero .hero-image {
-    position: absolute;
+    position: static;
     top: 0;
     width: 100%;
   }
 
   .mt-300 {
     margin-top: 140px !important;
-  }
-
-  .pt-400 {
-    padding-top: 800px !important;
   }
 }
 @media (max-width: 768px) {
@@ -481,12 +477,13 @@ footer p {
     padding-bottom: 120px;
   }
 
-  .pt-400 {
-    padding-top: 600px !important;
-  }
-
   .navbar {
     padding: 22px 0;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 48px;
   }
 
   .card .card-title {
@@ -522,16 +519,6 @@ footer p {
   }
   footer p {
     font-size: 12px;
-  }
-}
-@media (max-width: 567px) {
-  .pt-400 {
-    padding-top: 560px !important;
-  }
-}
-@media (max-width: 414px) {
-  .pt-400 {
-    padding-top: 420px !important;
   }
 }
 
