@@ -35,8 +35,8 @@ p {
   height: 36%;
 }
 
-.pt-190 {
-  padding-top: 190px !important;
+.mt-300 {
+  margin-top: 300px !important;
 }
 
 .pt-160 {
@@ -119,11 +119,9 @@ a {
   text-decoration: none;
 }
 
-.navbar {
-  padding: 42px 0;
-  background-color: #FFFFFF !important;
+.navbar-light .navbar-nav {
+  margin-left: auto;
 }
-
 .navbar-light .navbar-nav .nav-link {
   font-family: "Circe";
   font-size: 18px;
@@ -131,6 +129,65 @@ a {
   padding: 0 12px;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar {
+  padding: 42px 0;
+  background-color: #FFFFFF !important;
+}
+.navbar .navbar-toggler,
+.navbar .navbar-brand {
+  z-index: 1000;
+}
+@media (max-width: 1200px) {
+  .navbar .navbar-collapse {
+    background-color: #FFFFFF;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center !important;
+  }
+  .navbar .navbar-collapse.show {
+    opacity: 1.5;
+  }
+  .navbar .navbar-collapse.collapse {
+    opacity: 0;
+    display: flex;
+    pointer-events: none;
+  }
+  .navbar .navbar-collapse.collapsing[style*=height] {
+    opacity: 1;
+    height: 100vh !important;
+  }
+  .navbar .navbar-collapse.collapsing {
+    opacity: 0;
+    height: 100vh;
+  }
+  .navbar .navbar-collapse.collapse.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navbar .navbar-collapse .navbar-nav {
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-light .navbar-nav .nav-link {
+    text-align: start;
+  }
+}
 .btn {
   font-family: "Circe";
   font-size: 20px;
@@ -369,8 +426,28 @@ footer p {
     background: none;
   }
 
+  h1 {
+    font-size: 54px !important;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 992px) {
+  .hero .hero-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .mt-300 {
+    margin-top: 140px !important;
+  }
+
   .pt-400 {
-    padding-top: 0px !important;
+    padding-top: 450px !important;
   }
 }
 @media (max-width: 768px) {
@@ -394,18 +471,8 @@ footer p {
     padding-bottom: 120px;
   }
 
-  .pt-190 {
-    padding-top: 10px !important;
-  }
-
-  .pt-400 {
-    padding-top: 450px !important;
-  }
-
-  .hero .hero-image {
-    position: absolute;
-    top: 0;
-    width: 100%;
+  .navbar {
+    padding: 22px 0;
   }
 
   .card .card-title {
