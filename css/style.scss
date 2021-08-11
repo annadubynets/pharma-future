@@ -107,18 +107,6 @@ a {
     background-color: $white;
 }
 
-@media (min-width: 992px) {
-    .mw-lg-130 {
-        max-width: 130%!important;
-    }
-}
-
-@media (min-width: 768px) {
-    .mw-md-150 {
-        max-width: 150%!important;
-    }
-}
-
 .hero {
     .hero-image {
         position: absolute;
@@ -191,6 +179,8 @@ textarea {
         font-weight: 300;
         font-size: 20px;
         padding: 11px 20px!important;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
     .btn-light {
         background-color: $white;
@@ -234,7 +224,7 @@ textarea {
     filter: blur(200px);
     position: absolute;
     z-index: -1;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         width: 123px;
         height: 123px;
         filter: blur(120px);
@@ -264,9 +254,9 @@ textarea {
         left: 0;
     }
     &.center {
-        top: 40%;
+        top: 35%;
         right: 45%;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             top: 10%;
             right: 75%;
         }
@@ -282,14 +272,14 @@ textarea {
     &.left {
         bottom: 0;
         left: 0;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             display: none;
         }
     }
     &.center {
         top: 30%;
         right: 20%;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             top: 0;
         }
     }
@@ -363,7 +353,7 @@ footer {
         margin-top: 140px!important;
     }
     .pt-400 {
-        padding-top: 450px!important;
+        padding-top: 800px!important;
     }
 }
 
@@ -383,6 +373,9 @@ footer {
     .pb-160 {
         padding-bottom: 120px;
     }
+    .pt-400 {
+        padding-top: 600px!important;
+    }
     .navbar {
         padding: 22px 0;
     }
@@ -400,6 +393,16 @@ footer {
     .main-description {
         font-size: 12px;
     }
+    .input-group-text {
+        padding: 10px 22px;
+    }
+    .bootstrap-select>.btn {
+        font-size: 10px;
+        padding: 12px 20px!important;
+    }
+    .bootstrap-select {
+        width: 140px!important;
+    }
     footer {
         ul li a {
             font-size: 14px;
@@ -407,5 +410,17 @@ footer {
         p {
             font-size: 12px;
         }
+    }
+}
+
+@media (max-width: 567px) {
+    .pt-400 {
+        padding-top: 560px!important;
+    }
+}
+
+@media (max-width: 414px) {
+    .pt-400 {
+        padding-top: 420px!important;
     }
 }
