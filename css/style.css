@@ -359,8 +359,8 @@ textarea {
   left: 0;
 }
 .gold-blur.center {
-  top: 50%;
-  right: 50%;
+  top: 40%;
+  right: 45%;
 }
 
 .blue-blur {
@@ -379,6 +379,10 @@ textarea {
 .blue-blur.left {
   bottom: 0;
   left: 0;
+}
+.blue-blur.center {
+  top: 30%;
+  right: 20%;
 }
 
 footer .form-control {

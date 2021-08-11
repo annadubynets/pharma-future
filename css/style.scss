@@ -262,8 +262,8 @@ textarea {
         left: 0;
     }
     &.center {
-        top: 50%;
-        right: 50%;
+        top: 40%;
+        right: 45%;
     }
 }
 
@@ -282,6 +282,10 @@ textarea {
     &.left {
         bottom: 0;
         left: 0;
+    }
+    &.center {
+        top: 30%;
+        right: 20%;
     }
 }
 
