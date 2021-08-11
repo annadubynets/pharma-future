@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Circe";
+  font-family: "Jost";
   font-weight: 600;
   font-size: 32px;
   color: #3B3B3B;
@@ -47,8 +47,12 @@ p {
   padding-top: 160px;
 }
 
-.mb-9 {
-  margin-bottom: 96px;
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
 }
 
 .pb-160 {
@@ -89,6 +93,10 @@ p {
 
 .font-size-24 {
   font-size: 24px;
+}
+
+.font-size-28 {
+  font-size: 28px;
 }
 
 .font-size-64 {
@@ -423,6 +431,23 @@ textarea {
   }
 }
 
+.privacy-list {
+  padding-left: 20px;
+}
+.privacy-list li {
+  font-family: "Circe";
+  font-size: 20px;
+}
+.privacy-list li::marker ::marker {
+  color: #005BF3;
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  .privacy-list li {
+    font-size: 12px;
+  }
+}
+
 footer .form-control {
   font-family: "Circe";
   font-size: 14px;
@@ -507,11 +532,23 @@ footer p {
   }
 
   p {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .font-size-28 {
+    font-size: 18px;
+  }
+
+  .pb-70 {
+    padding-bottom: 24px;
   }
 
   .pb-160 {
     padding-bottom: 120px;
+  }
+
+  .mt-180 {
+    margin-top: 110px;
   }
 
   .mt-300 {
