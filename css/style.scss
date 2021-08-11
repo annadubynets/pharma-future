@@ -358,6 +358,47 @@ footer {
     }
 }
 
+.accordion-item {
+    background-color: $aliceblue;
+    border: none;
+    border-radius: 2px;
+}
+
+.accordion-button {
+    font-size: 20px;
+    color: $darkgrey;
+    background-color: $aliceblue;
+    padding: 16px 24px;
+    box-shadow: none;
+    &:focus {
+        box-shadow: none;
+    }
+    &::after {
+        background: none;
+        font-family: 'icomoon';
+        content: "\e902";
+        color: $blue;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    font-size: 20px;
+    color: $darkgrey;
+    background-color: $aliceblue;
+    padding: 16px 24px;
+    box-shadow: none;
+    &::after {
+        background: none;
+    }
+}
+
+.accordion-body {
+    font-family: 'Circe';
+    font-size: 16px;
+    color: $darkgrey;
+    padding-top: 0;
+}
+
 @media (max-width: 1400px) {
     .navbar-light .navbar-nav .nav-link {
         font-size: 16px;
@@ -403,6 +444,9 @@ footer {
     h3 {
         font-size: 14px;
     }
+    h5 {
+        font-size: 14px;
+    }
     p {
         font-size: 12px;
     }
@@ -411,6 +455,9 @@ footer {
     }
     .pb-70 {
         padding-bottom: 24px;
+    }
+    .pb-120 {
+        padding-bottom: 46px;
     }
     .pb-160 {
         padding-bottom: 120px;
@@ -458,5 +505,14 @@ footer {
         p {
             font-size: 12px;
         }
+    }
+    .accordion-button {
+        font-size: 14px;
+    }
+    .accordion-button:not(.collapsed) {
+        font-size: 14px;
+    }
+    .accordion-body {
+        font-size: 12px;
     }
 }

@@ -23,6 +23,13 @@ h3 {
   color: #005BF3;
 }
 
+h5 {
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 20px;
+  color: #3B3B3B;
+}
+
 p {
   font-family: "Circe";
   font-weight: normal;
@@ -484,6 +491,47 @@ footer p {
   font-size: 18px;
 }
 
+.accordion-item {
+  background-color: #F4F8FF;
+  border: none;
+  border-radius: 2px;
+}
+
+.accordion-button {
+  font-size: 20px;
+  color: #3B3B3B;
+  background-color: #F4F8FF;
+  padding: 16px 24px;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  background: none;
+  font-family: "icomoon";
+  content: "";
+  color: #005BF3;
+}
+
+.accordion-button:not(.collapsed) {
+  font-size: 20px;
+  color: #3B3B3B;
+  background-color: #F4F8FF;
+  padding: 16px 24px;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background: none;
+}
+
+.accordion-body {
+  font-family: "Circe";
+  font-size: 16px;
+  color: #3B3B3B;
+  padding-top: 0;
+}
+
 @media (max-width: 1400px) {
   .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
@@ -531,6 +579,10 @@ footer p {
     font-size: 14px;
   }
 
+  h5 {
+    font-size: 14px;
+  }
+
   p {
     font-size: 12px;
   }
@@ -541,6 +593,10 @@ footer p {
 
   .pb-70 {
     padding-bottom: 24px;
+  }
+
+  .pb-120 {
+    padding-bottom: 46px;
   }
 
   .pb-160 {
@@ -595,6 +651,18 @@ footer p {
     font-size: 14px;
   }
   footer p {
+    font-size: 12px;
+  }
+
+  .accordion-button {
+    font-size: 14px;
+  }
+
+  .accordion-button:not(.collapsed) {
+    font-size: 14px;
+  }
+
+  .accordion-body {
     font-size: 12px;
   }
 }
