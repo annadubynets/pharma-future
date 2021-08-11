@@ -432,10 +432,6 @@ footer p {
     font-size: 16px;
   }
 
-  .form-bg {
-    background: none;
-  }
-
   h1 {
     font-size: 54px !important;
   }
@@ -453,7 +449,11 @@ footer p {
   }
 
   .mt-300 {
-    margin-top: 140px !important;
+    margin-top: 80px !important;
+  }
+
+  .form-bg {
+    background: none;
   }
 }
 @media (max-width: 768px) {
@@ -479,6 +479,10 @@ footer p {
 
   .navbar {
     padding: 22px 0;
+  }
+
+  .navbar-brand-img {
+    width: 156px;
   }
 
   .btn {

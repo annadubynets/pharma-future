@@ -327,9 +327,6 @@ footer {
     .navbar-light .navbar-nav .nav-link {
         font-size: 16px;
     }
-    .form-bg {
-        background: none
-    }
     h1 {
         font-size: 54px!important;
     }
@@ -350,7 +347,10 @@ footer {
         }
     }
     .mt-300 {
-        margin-top: 140px!important;
+        margin-top: 80px!important;
+    }
+    .form-bg {
+        background: none
     }
 }
 
@@ -372,6 +372,9 @@ footer {
     }
     .navbar {
         padding: 22px 0;
+    }
+    .navbar-brand-img {
+        width: 156px;
     }
     .btn {
         font-size: 16px;
