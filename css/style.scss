@@ -17,6 +17,10 @@ a {
         font-size: 18px;
         color: $black;
         padding: 0 12px;
+        &.active {
+            font-weight: 600;
+            color: $blue;
+        }
     }
 }
 
@@ -100,6 +104,12 @@ a {
     &:focus {
         box-shadow: inset 0px 15px 35px rgba(0, 95, 255, 0.35);
     }
+}
+
+.btn-outline-primary {
+    color: $blue;
+    background-color: $white;
+    border: 1px solid $blue;
 }
 
 .btn-white {
@@ -240,6 +250,14 @@ textarea {
     &.left {
         top: 0;
         left: 0;
+    }
+    &.center {
+        top: 40%;
+        right: 60%;
+        @media (max-width: 992px) {
+            top: 0;
+            right: 30%;
+        }
     }
 }
 

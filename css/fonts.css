@@ -108,7 +108,6 @@
 
 .icon-email:before {
     content: "\e906";
-    color: #fff;
 }
 
 .icon-settings:before {
@@ -118,17 +117,14 @@
 
 .icon-phone:before {
     content: "\e908";
-    color: #fff;
 }
 
 .icon-location:before {
     content: "\e909";
-    color: #fff;
 }
 
 .icon-world-wide-web:before {
     content: "\e90a";
-    color: #005bf3;
 }
 
 .icon-user:before {
