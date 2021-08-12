@@ -507,20 +507,20 @@ marquee {
 .details-block {
     position: relative;
     cursor: pointer;
+    .details-link {
+        background: linear-gradient(63.91deg, rgba(41, 112, 232, 0) 14.04%, rgba(41, 112, 232, 0.6) 53.11%), url(fffff.png);
+        border-radius: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: none;
+    }
     @media (min-width: 768px) {
-        .details-link {
-            background: linear-gradient(63.91deg, rgba(41, 112, 232, 0) 14.04%, rgba(41, 112, 232, 0.6) 53.11%), url(fffff.png);
-            border-radius: 2px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            display: none;
-        }
         &:hover {
             .details-link {
                 display: flex;
