@@ -1,3 +1,5 @@
+@import "./owl.carousel.min.css";
+@import "./owl.theme.default.min.css";
 @import "./bootstrap.min.css";
 @import "./bootstrap-select.min.css";
 @import "fonts.css";
@@ -170,8 +172,16 @@ a {
     }
 }
 
-.card-img-top {
-    min-height: 211px;
+.image-style {
+    max-width: 80%;
+    @media (max-width: 768px) {
+        max-width: 40%;
+    }
+}
+
+.owl-carousel .owl-item img {
+    display: inline-block;
+    justify-content: center;
 }
 
 .main-description {
@@ -497,24 +507,49 @@ marquee {
 .details-block {
     position: relative;
     cursor: pointer;
-    .details-link {
-        background: linear-gradient(63.91deg, rgba(41, 112, 232, 0) 14.04%, rgba(41, 112, 232, 0.6) 53.11%), url(fffff.png);
-        border-radius: 2px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: none;
-    }
-    &:hover {
+    @media (min-width: 768px) {
         .details-link {
-            display: flex;
+            background: linear-gradient(63.91deg, rgba(41, 112, 232, 0) 14.04%, rgba(41, 112, 232, 0.6) 53.11%), url(fffff.png);
+            border-radius: 2px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: none;
+        }
+        &:hover {
+            .details-link {
+                display: flex;
+            }
         }
     }
+}
+
+.owl-theme .owl-dots {
+    display: flex;
+    justify-content: center;
+    .owl-dot span {
+        width: 10px;
+        height: 10px;
+        background-color: $lightskyblue;
+    }
+    .owl-dot.active span,
+    .owl-dots .owl-dot:hover span {
+        width: 16px;
+        height: 16px;
+        background-color: $blue;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    width: 16px;
+    height: 16px;
+    background-color: $blue;
 }
 
 @media (max-width: 1400px) {
@@ -608,9 +643,6 @@ marquee {
         .card-text {
             font-size: 12px;
         }
-    }
-    .card-img-top {
-        min-height: 63px;
     }
     .main-description {
         font-size: 12px;
