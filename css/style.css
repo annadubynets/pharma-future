@@ -464,13 +464,29 @@ textarea {
   font-family: "Circe";
   font-size: 20px;
 }
-.privacy-list li::marker ::marker {
+.privacy-list li::marker {
   color: #005BF3;
   font-size: 17px;
 }
 @media (max-width: 768px) {
   .privacy-list li {
     font-size: 12px;
+  }
+}
+
+.offer-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.offer-list li {
+  font-family: "Circe";
+  font-size: 18px;
+  color: #3B3B3B;
+}
+@media (max-width: 768px) {
+  .offer-list li {
+    font-size: 14px;
   }
 }
 
