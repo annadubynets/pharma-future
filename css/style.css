@@ -347,7 +347,7 @@ a {
 }
 @media (max-width: 768px) {
   .image-style {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 
