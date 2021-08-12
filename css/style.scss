@@ -121,6 +121,17 @@ a {
     }
 }
 
+.btn-outline-light {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    &:hover {
+        background-color: transparent;
+        color: $white;
+    }
+}
+
 .btn-white {
     color: $black;
     background-color: $white;
@@ -479,6 +490,29 @@ marquee {
         font-size: 64px;
         @media (max-width: 768px) {
             font-size: 24px;
+        }
+    }
+}
+
+.details-block {
+    position: relative;
+    cursor: pointer;
+    .details-link {
+        background: linear-gradient(63.91deg, rgba(41, 112, 232, 0) 14.04%, rgba(41, 112, 232, 0.6) 53.11%), url(fffff.png);
+        border-radius: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: none;
+    }
+    &:hover {
+        .details-link {
+            display: flex;
         }
     }
 }
