@@ -18,23 +18,23 @@ h2 {
 
 h3 {
   font-family: "Jost";
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 28px;
   color: #005BF3;
 }
 
 h4 {
   font-family: "Jost";
-  font-weight: 600;
-  font-size: 22px;
-  color: #474747;
+  font-weight: normal;
+  font-size: 24px;
+  color: #005BF3;
 }
 
 h5 {
   font-family: "Jost";
   font-weight: 600;
-  font-size: 20px;
-  color: #3B3B3B;
+  font-size: 22px;
+  color: #474747;
 }
 
 p {
@@ -558,6 +558,7 @@ footer p {
 }
 
 .accordion-button {
+  font-weight: 600;
   font-size: 20px;
   color: #3B3B3B;
   background-color: #F4F8FF;
@@ -575,6 +576,7 @@ footer p {
 }
 
 .accordion-button:not(.collapsed) {
+  font-weight: 600;
   font-size: 20px;
   color: #3B3B3B;
   background-color: #F4F8FF;
@@ -645,15 +647,15 @@ marquee p {
   }
 
   h3 {
-    font-size: 16px;
-  }
-
-  h4 {
     font-size: 18px;
   }
 
-  h5 {
+  h4 {
     font-size: 14px;
+  }
+
+  h5 {
+    font-size: 18px;
   }
 
   p {

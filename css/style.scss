@@ -396,6 +396,7 @@ footer {
 }
 
 .accordion-button {
+    font-weight: 600;
     font-size: 20px;
     color: $darkgrey;
     background-color: $aliceblue;
@@ -413,6 +414,7 @@ footer {
 }
 
 .accordion-button:not(.collapsed) {
+    font-weight: 600;
     font-size: 20px;
     color: $darkgrey;
     background-color: $aliceblue;
@@ -482,13 +484,13 @@ marquee {
         font-size: 24px;
     }
     h3 {
-        font-size: 16px;
-    }
-    h4 {
         font-size: 18px;
     }
-    h5 {
+    h4 {
         font-size: 14px;
+    }
+    h5 {
+        font-size: 18px;
     }
     p {
         font-size: 12px;
