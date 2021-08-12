@@ -9,7 +9,7 @@ if ($('.owl-carousel').length > 0) {
                 items: 1,
                 nav: false
             },
-            720: {
+            768: {
                 items: 3,
                 nav: false,
                 loop: false
