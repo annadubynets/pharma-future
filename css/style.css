@@ -204,6 +204,18 @@ a {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+.navbar-toggler .toggler-expanded {
+  display: block;
+}
+.navbar-toggler .toggler-collapsed {
+  display: none;
+}
+.navbar-toggler.collapsed .toggler-expanded {
+  display: none;
+}
+.navbar-toggler.collapsed .toggler-collapsed {
+  display: block;
+}
 
 .navbar {
   padding: 42px 0;
