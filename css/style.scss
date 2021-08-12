@@ -138,6 +138,27 @@ a {
     }
 }
 
+.story {
+    .story-image {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        min-height: 680px;
+        object-fit: cover;
+        @media (max-width: 992px) {
+            position: static;
+            width: 100%;
+            min-height: auto;
+        }
+    }
+    .image-wrapper {
+        min-height: 680px;
+        @media (max-width: 992px) {
+            min-height: auto;
+        }
+    }
+}
+
 .card-img-top {
     min-height: 211px;
 }
@@ -530,6 +551,9 @@ marquee {
     }
     .pb-160 {
         padding-bottom: 120px;
+    }
+    .mt-150 {
+        margin-top: 70px;
     }
     .mt-180 {
         margin-top: 110px;

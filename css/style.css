@@ -49,6 +49,10 @@ p {
   height: 36%;
 }
 
+.mt-150 {
+  margin-top: 150px;
+}
+
 .mt-180 {
   margin-top: 180px;
 }
@@ -163,6 +167,10 @@ p {
 
 .rounded-1 {
   border-radius: 4px;
+}
+
+.z-index-1 {
+  z-index: 1;
 }
 
 body {
@@ -292,6 +300,29 @@ a {
   position: absolute;
   right: 0;
   width: 51%;
+}
+
+.story .story-image {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  min-height: 680px;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .story .story-image {
+    position: static;
+    width: 100%;
+    min-height: auto;
+  }
+}
+.story .image-wrapper {
+  min-height: 680px;
+}
+@media (max-width: 992px) {
+  .story .image-wrapper {
+    min-height: auto;
+  }
 }
 
 .card-img-top {
@@ -701,6 +732,10 @@ marquee p {
 
   .pb-160 {
     padding-bottom: 120px;
+  }
+
+  .mt-150 {
+    margin-top: 70px;
   }
 
   .mt-180 {
