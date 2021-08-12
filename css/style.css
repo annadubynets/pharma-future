@@ -149,6 +149,10 @@ p {
   border: 1px solid #AEC9FF !important;
 }
 
+.border-blue {
+  border: 1px solid #005BF3 !important;
+}
+
 .shadow-sm {
   box-shadow: 0px 35px 35px rgba(103, 123, 158, 0.05) !important;
 }
@@ -265,10 +269,23 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #005BF3;
 }
+.btn-outline-primary:hover {
+  color: #005BF3;
+  background: rgba(93, 149, 243, 0.08);
+}
+.btn-outline-primary:focus {
+  color: #005BF3;
+  background: rgba(93, 149, 243, 0.08);
+  box-shadow: inset 0px 4px 4px rgba(93, 149, 243, 0.15);
+}
 
 .btn-white {
   color: #474747;
   background-color: #FFFFFF;
+}
+
+.border-left-none {
+  border-left: none !important;
 }
 
 .hero .hero-image {
@@ -320,7 +337,7 @@ textarea {
   color: #3B3B3B;
   border: 1px solid #005BF3;
   border-radius: 4px;
-  padding: 13px 16px;
+  padding: 11px 16px;
 }
 .form-control::placeholder {
   color: rgba(0, 91, 243, 0.5);
@@ -333,7 +350,14 @@ textarea {
 .input-group-text {
   background-color: #005BF3;
   border: none;
-  padding: 10px 48px;
+  padding: 11px 48px;
+}
+
+.search-input .form-control {
+  font-size: 20px;
+}
+.search-input .form-control::placeholder {
+  color: #757575;
 }
 
 .bootstrap-select > .btn {
@@ -710,13 +734,17 @@ marquee p {
     font-size: 12px;
   }
 
+  .search-input .form-control {
+    font-size: 10px;
+  }
+
   .input-group-text {
-    padding: 10px 22px;
+    padding: 7px 22px;
   }
 
   .bootstrap-select > .btn {
     font-size: 10px;
-    padding: 12px 20px !important;
+    padding: 11px 8px !important;
   }
 
   .bootstrap-select {

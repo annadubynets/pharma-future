@@ -110,11 +110,24 @@ a {
     color: $blue;
     background-color: $white;
     border: 1px solid $blue;
+    &:hover {
+        color: $blue;
+        background: rgba(93, 149, 243, 0.08);
+    }
+    &:focus {
+        color: $blue;
+        background: rgba(93, 149, 243, 0.08);
+        box-shadow: inset 0px 4px 4px rgba(93, 149, 243, 0.15);
+    }
 }
 
 .btn-white {
     color: $black;
     background-color: $white;
+}
+
+.border-left-none {
+    border-left: none!important;
 }
 
 .hero {
@@ -168,7 +181,7 @@ textarea {
     color: $darkgrey;
     border: 1px solid $blue;
     border-radius: 4px;
-    padding: 13px 16px;
+    padding: 11px 16px;
     &::placeholder {
         color: rgba(0, 91, 243, 0.5);
     }
@@ -181,7 +194,16 @@ textarea {
 .input-group-text {
     background-color: $blue;
     border: none;
-    padding: 10px 48px;
+    padding: 11px 48px;
+}
+
+.search-input {
+    .form-control {
+        font-size: 20px;
+        &::placeholder {
+            color: #757575;
+        }
+    }
 }
 
 .bootstrap-select> {
@@ -535,12 +557,15 @@ marquee {
     .main-description {
         font-size: 12px;
     }
+    .search-input .form-control {
+        font-size: 10px;
+    }
     .input-group-text {
-        padding: 10px 22px;
+        padding: 7px 22px;
     }
     .bootstrap-select>.btn {
         font-size: 10px;
-        padding: 12px 20px!important;
+        padding: 11px 8px !important;
     }
     .bootstrap-select {
         width: 140px!important;
