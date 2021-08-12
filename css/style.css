@@ -490,6 +490,27 @@ textarea {
   }
 }
 
+.text-caption-decoration {
+  position: relative;
+}
+.text-caption-decoration::before {
+  content: attr(data-caption);
+  display: inline-block;
+  font-size: 72px;
+  color: #AEC9FF;
+  position: absolute;
+  top: -38px;
+  left: -50px;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .text-caption-decoration::before {
+    font-size: 48px;
+    top: -30px;
+    left: 0;
+  }
+}
+
 footer .form-control {
   font-family: "Circe";
   font-size: 14px;

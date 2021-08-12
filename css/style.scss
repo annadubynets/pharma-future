@@ -332,6 +332,25 @@ textarea {
     }
 }
 
+.text-caption-decoration {
+    position: relative;
+    &::before {
+        content: attr(data-caption);
+        display: inline-block;
+        font-size: 72px;
+        color: $lightskyblue;
+        position: absolute;
+        top: -38px;
+        left: -50px;
+        z-index: -1;
+        @media (max-width: 768px) {
+            font-size: 48px;
+            top: -30px;
+            left: 0;
+        }
+    }
+}
+
 footer {
     .form-control {
         font-family: 'Circe';
