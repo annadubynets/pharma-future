@@ -551,13 +551,12 @@ footer p {
   font-size: 18px;
 }
 
-.accordion-item {
+.accordion .accordion-item {
   background-color: #F4F8FF;
   border: none;
   border-radius: 2px;
 }
-
-.accordion-button {
+.accordion .accordion-item .accordion-button {
   font-weight: 600;
   font-size: 20px;
   color: #3B3B3B;
@@ -565,17 +564,16 @@ footer p {
   padding: 16px 24px;
   box-shadow: none;
 }
-.accordion-button:focus {
+.accordion .accordion-item .accordion-button:focus {
   box-shadow: none;
 }
-.accordion-button::after {
+.accordion .accordion-item .accordion-button::after {
   background: none;
   font-family: "icomoon";
   content: "";
   color: #005BF3;
 }
-
-.accordion-button:not(.collapsed) {
+.accordion .accordion-item .accordion-button:not(.collapsed) {
   font-weight: 600;
   font-size: 20px;
   color: #3B3B3B;
@@ -583,11 +581,10 @@ footer p {
   padding: 16px 24px;
   box-shadow: none;
 }
-.accordion-button:not(.collapsed)::after {
+.accordion .accordion-item .accordion-button:not(.collapsed)::after {
   background: none;
 }
-
-.accordion-body {
+.accordion .accordion-item .accordion-body {
   font-family: "Circe";
   font-size: 16px;
   color: #3B3B3B;

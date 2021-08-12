@@ -389,47 +389,46 @@ footer {
     }
 }
 
-.accordion-item {
-    background-color: $aliceblue;
-    border: none;
-    border-radius: 2px;
-}
-
-.accordion-button {
-    font-weight: 600;
-    font-size: 20px;
-    color: $darkgrey;
-    background-color: $aliceblue;
-    padding: 16px 24px;
-    box-shadow: none;
-    &:focus {
-        box-shadow: none;
+.accordion {
+    .accordion-item {
+        background-color: $aliceblue;
+        border: none;
+        border-radius: 2px;
+        .accordion-button {
+            font-weight: 600;
+            font-size: 20px;
+            color: $darkgrey;
+            background-color: $aliceblue;
+            padding: 16px 24px;
+            box-shadow: none;
+            &:focus {
+                box-shadow: none;
+            }
+            &::after {
+                background: none;
+                font-family: 'icomoon';
+                content: "\e902";
+                color: $blue;
+            }
+            &:not(.collapsed) {
+                font-weight: 600;
+                font-size: 20px;
+                color: $darkgrey;
+                background-color: $aliceblue;
+                padding: 16px 24px;
+                box-shadow: none;
+                &::after {
+                    background: none;
+                }
+            }
+        }
+        .accordion-body {
+            font-family: 'Circe';
+            font-size: 16px;
+            color: $darkgrey;
+            padding-top: 0;
+        }
     }
-    &::after {
-        background: none;
-        font-family: 'icomoon';
-        content: "\e902";
-        color: $blue;
-    }
-}
-
-.accordion-button:not(.collapsed) {
-    font-weight: 600;
-    font-size: 20px;
-    color: $darkgrey;
-    background-color: $aliceblue;
-    padding: 16px 24px;
-    box-shadow: none;
-    &::after {
-        background: none;
-    }
-}
-
-.accordion-body {
-    font-family: 'Circe';
-    font-size: 16px;
-    color: $darkgrey;
-    padding-top: 0;
 }
 
 marquee {
