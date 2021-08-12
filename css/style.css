@@ -61,6 +61,10 @@ p {
   padding-top: 160px;
 }
 
+.pb-68 {
+  padding-bottom: 68px;
+}
+
 .pb-70 {
   padding-bottom: 70px;
 }
@@ -658,6 +662,10 @@ marquee p {
 
   .font-size-28 {
     font-size: 18px;
+  }
+
+  .pb-68 {
+    padding-bottom: 48px;
   }
 
   .pb-70 {
