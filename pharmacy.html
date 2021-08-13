@@ -119,8 +119,8 @@
             </div>
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
-                    <div class="input-group search-input mb-3">
-                        <select class="selectpicker">
+                    <div class="input-group d-md-flex d-block search-input mb-3">
+                        <select class="selectpicker d-inline">
                                 <option value="0">Seleziona regione</option>
                                 <option value="1">First regione</option> 
                                 <option value="2">Second regione</option>
@@ -128,12 +128,16 @@
                                 <option value="4">Fourth regione</option>
                                 <option value="5">Fifth regione</option>
                           </select>
-                        <span class="input-group-text bg-transparent border-blue ps-lg-4 ps-2 pe-0">
-                            <img src="images/google-map.svg" alt="google map">
-                        </span>
-                        <input type="text" class="form-control border-left-none" aria-label="Amount (to the nearest dollar)" placeholder="Cerca per parola chiave">
-                        <span class="input-group-text">
-                            <span class="icon-search text-white font-size-20"></span>
+                        <div class="d-flex flex-grow-1">
+                            <span class="input-group-text bg-transparent border-blue border-right-none rounded-md-0 ps-lg-4 ps-2 pe-0">
+                                <img src="images/google-map.svg" alt="google map">
+                            </span>
+                            <input type="text" class="form-control border-left-none" aria-label="Amount (to the nearest dollar)" placeholder="Cerca per parola chiave">
+                        </div>
+
+                        <span class="input-group-text justify-content-center rounded-md-1">
+                            <span class="icon-search text-white font-size-20 d-md-block d-none"></span>
+                        <p class="d-md-none d-block text-white font-size-16">Search</p>
                         </span>
                     </div>
                 </div>

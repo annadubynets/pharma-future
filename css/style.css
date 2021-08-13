@@ -115,6 +115,10 @@ p {
   font-size: 14px;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
 .font-size-18 {
   font-size: 18px;
 }
@@ -325,6 +329,10 @@ a {
   border-left: none !important;
 }
 
+.border-right-none {
+  border-right: none !important;
+}
+
 .hero .hero-image {
   position: absolute;
   right: 0;
@@ -417,14 +425,35 @@ textarea {
   border-color: #005BF3;
 }
 
+.rounded-md-0 {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .rounded-md-0 {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  .rounded-md-1 {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+  }
+}
 .input-group-text {
   background-color: #005BF3;
   border: none;
   padding: 11px 48px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .search-input .form-control {
   font-size: 20px;
+  border-radius: 0;
 }
 .search-input .form-control::placeholder {
   color: #757575;
@@ -436,6 +465,12 @@ textarea {
   padding: 11px 20px !important;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+@media (max-width: 768px) {
+  .bootstrap-select > .btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
 }
 .bootstrap-select > .btn-light {
   background-color: #FFFFFF;
@@ -851,7 +886,9 @@ marquee p {
   }
 
   .search-input .form-control {
-    font-size: 10px;
+    font-size: 16px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
 
   .input-group-text {
@@ -859,7 +896,7 @@ marquee p {
   }
 
   .bootstrap-select > .btn {
-    font-size: 10px;
+    font-size: 16px;
     padding: 11px 8px !important;
   }
 
