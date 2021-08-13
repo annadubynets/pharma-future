@@ -135,6 +135,10 @@ p {
   font-size: 28px;
 }
 
+.font-size-30 {
+  font-size: 30px;
+}
+
 .font-size-36 {
   font-size: 36px !important;
 }
@@ -225,9 +229,11 @@ a {
   padding: 42px 0;
   background-color: #FFFFFF !important;
 }
-.navbar .navbar-toggler,
-.navbar .navbar-brand {
+.navbar .navbar-toggler {
   z-index: 1000;
+}
+.navbar .navbar-collapse .navbar-menu-brand-img {
+  width: 150px;
 }
 @media (max-width: 1200px) {
   .navbar .navbar-collapse {
@@ -873,11 +879,11 @@ marquee p {
   }
 
   .navbar {
-    padding: 22px 0;
+    padding: 10px 0;
   }
 
   .navbar-brand-img {
-    width: 156px;
+    width: 125px;
   }
 
   .card .card-title {

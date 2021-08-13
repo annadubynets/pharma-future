@@ -49,11 +49,14 @@ a {
 .navbar {
     padding: 42px 0;
     background-color: $white!important;
-    .navbar-toggler,
-    .navbar-brand {
+    .navbar-toggler {
         z-index: 1000;
     }
     .navbar-collapse {
+        .navbar-menu-brand-img {
+            width: 150px;
+        }
+
         @media (max-width: 1200px) {
             &.show {
                 opacity: 1.5;
@@ -679,10 +682,10 @@ marquee {
         margin-top: 80px!important;
     }
     .navbar {
-        padding: 22px 0;
+        padding: 10px 0;
     }
     .navbar-brand-img {
-        width: 156px;
+        width: 125px;
     }
     .card {
         .card-title {
